@@ -55,3 +55,7 @@ body{background:radial-gradient(ellipse 65% 48% at 92% 5%,#384b9a52,transparent 
 @media(max-width:780px){.mentor-metrics{grid-template-columns:repeat(2,1fr)}.hero{padding:45px 22px!important}.mentor-coach{width:79px}.mentor-speech{bottom:85px;left:25px}.mentor-hero-art{opacity:.12}.mentor-dialog{bottom:9px;right:9px}.mentor-road-dot{min-height:26px;font-size:10px}}
 @media(max-width:420px){.mentor-dashboard{padding:16px}.mentor-metric{padding:12px}.mentor-metrics{gap:8px}}
 @media(prefers-reduced-motion:reduce){.mentor-coach,.mentor-coach img,.card,.mentor-meter>div{animation:none!important;transition:none!important}.card:hover{transform:none}}
+
+/* Gentle interactive 3D tilt: only fine pointers; never required for navigation */
+@media(hover:hover) and (pointer:fine){.glass-hero,.mentor-dashboard{transform-style:preserve-3d;will-change:transform;transition:transform .22s ease,box-shadow .22s ease}.glass-hero h1,.mentor-dashboard h2{transform:translateZ(14px)}.mentor-metrics{transform:translateZ(8px)}}
+@media(prefers-reduced-motion:reduce){.glass-hero,.mentor-dashboard,.glass-hero h1,.mentor-dashboard h2,.mentor-metrics{transform:none!important;will-change:auto!important}}
