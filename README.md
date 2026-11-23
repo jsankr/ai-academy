@@ -1,165 +1,278 @@
 # ✦ AI Adventure Academy
 
-**A free, interactive, glassmorphism-style AI learning website with a 3D chimp guide named Milo.**
+**A free, hands-on AI learning adventure for curious children, everyday beginners, practical creators and advanced builders.**
 
-AI Adventure Academy is a static web application designed for **kids, beginners, builders and advanced learners**. It teaches AI fundamentals, creative tools, productivity, agents, vibe coding and publishing — through a **12-week hands-on journey**.
+🌐 **[Open AI Adventure Academy](https://jsankr.github.io/ai-academy/)** · 📓 **[Practical Workbook](https://jsankr.github.io/ai-academy/workbook.html)**
 
-## What is new in this version?
+Learn AI through playful experiments, helpful explanations, guided exercises, nine agent prototypes, and a personal progress cockpit. Meet **Milo**, our cheerful 3D chimp learning companion.
 
-- **New 3D-rendered Milo mascot integrated into the application**
-- **Jumping Milo guide** that moves around the site and opens an interactive help panel
-- **Glassy Figma-style UI/UX refresh** with richer cards, gradients and hover depth
-- **Learning Cockpit dashboard** for progress, quiz scores and next-step guidance
-- **Illustrated setup guide** with five images explaining how to run it locally and optionally install it like a standalone app
+> No programming experience required for beginner lessons. The app itself is a static website. It does not need a paid AI subscription, backend, account or database to run its built-in lessons.
 
-## Who can learn?
+## ✨ What you'll find
 
-| Path | Learner | Experience | Sample capstone |
+| Feature | Experience |
+|---|---|
+| Four learning paths | Young Explorers (with adult guidance), Everyday Beginners, Practical Builders, Expert Lab |
+| 12-week curriculum | AI basics → creative AI → productivity → agents → vibe coding → publishing |
+| Learning Cockpit | Course completion, progress percentage, quiz results, learner rank, next lesson |
+| Milo, the chimp guide | Playful animated character with built-in lesson explanations and next-step guidance |
+| AI glossary | Searchable explanations of tokens, models, weights, GPUs, LLMs and more |
+| Nine agent labs | Planner, inbox sorter, budget analyzer, research helper, meeting assistant, creator, buyer comparison, quiz tutor and maintenance helper |
+| Practical workbook | Hands-on projects, examples, evaluation checks and safe development practices |
+| Local and offline-ready | Run from a local HTTP server; supported browsers may cache the app shell after first load |
+
+**Milo is a course-aware offline guide, not a live ChatGPT or Claude model.** His answers are limited to the built-in lesson topics. He doesn't independently browse the internet or access private accounts. The mascot is a 3D-rendered image animated in the interface, not a rotatable 3D geometry model.
+
+## 🐵 Meet Milo
+
+Milo is designed to make learning less intimidating. Click his character to open the help panel, ask about AI concepts, request your next lesson or review your progress. You can pause his movement, close the dialog with **Escape**, or turn motion off through your device's reduced-motion preference.
+
+![Illustration of AI Academy learning exercise](assets/exercise-week.svg)
+
+## 🎓 Choose your learning path
+
+| Path | Suitable for | How you learn | Final challenge |
 |---|---|---|---|
-| 🪁 Young Explorers | Ages 8–12, with adult supervision | Pattern games, stories, drawings, paper flowcharts | AI comic or storybook |
-| 🌱 Everyday Beginners | Teens 13+ and nontechnical adults | ChatGPT/Claude, prompts, media tools, productivity | Illustrated life organizer |
-| 🛠️ Practical Builders | Intermediate | n8n/Make, 9 safe agent prototypes, vibe coding | Personal dashboard |
-| 🚀 Expert Lab | Advanced learners | Python, APIs, RAG, security, evaluation | Controlled agent app |
+| 🪁 Young Explorers | Roughly ages 8–12, supervised | Pattern detective games, stories, drawing, simple flowcharts | Make an AI-inspired comic or storybook |
+| 🌱 Everyday Beginners | Teens and adults new to AI | Plain-language analogies, everyday prompts, creative content | Produce a personal AI-assisted organizer |
+| 🛠️ Practical Builders | Learners ready to make things | No-code automation, nine agent prototypes, website creation | Publish a useful website |
+| 🚀 Expert Lab | Learners with technical experience | APIs, Python, RAG, testing, safe agent design | Build an evaluated, controlled AI workflow |
 
-## Project structure
+Age labels are suggestions rather than entry requirements. Children should use only age-eligible third-party services and have adult supervision. Avoid entering children's identifying or private information into external AI services.
 
-- `index.html` — main academy experience
-- `workbook.html` — deeper practical labs and agent exercises
-- `course-data.json` — content reference
-- `assets/milo-3d.webp` — integrated 3D Milo mascot
-- `assets/setup-step-*.png` — illustrated setup instructions
-- `manifest.webmanifest`, `sw.js` — installable-web-app metadata and offline caching
-- `README.md` — this guide
+## 📅 Your 12-week AI adventure
 
-## How the training was created
+**Self-guided schedule:** Monday 7:30–8:30 PM, Wednesday 7:30–9:00 PM, Saturday 10 AM–12 PM, Sunday 10–10:30 AM, in India Standard Time (IST). The original cohort starts **30 November 2026**, but you can start any time. The 5-hour weekly commitment is a guideline; young learners may prefer shorter sessions.
 
-1. Define the learner outcomes: AI basics, tools, productivity, agents and publishing.
-2. Split the material into a 12-week plan with a fixed rhythm: learn, experiment, build and review.
-3. Design four levels so the same concepts work for children, everyday adults, practical builders and advanced users.
-4. Turn each concept into an experiment, a prompt, a checkpoint and a small capstone.
-5. Build a static web app so the course can run locally without logins or subscriptions.
-6. Add a course-aware helper (Milo) to improve guidance and motivation.
-7. Add a visual dashboard so progress is visible and fun.
-8. Validate HTML, JavaScript, file links and local serving.
+| Week | Topic | Build / experiment |
+|---|---|---|
+| 1 | What AI really is | Recognize AI versus ordinary software |
+| 2 | LLMs, GPUs, weights, parameters and tokens | Trace how a chatbot generates an answer |
+| 3 | ChatGPT, Claude and useful prompts | Create a reusable prompt toolkit |
+| 4 | Image creation and editing | Design and compare original posters |
+| 5 | AI videos, voice and sound | Build a narrated short explainer |
+| 6 | Presentations and personal productivity | Create useful slides and everyday routines |
+| 7 | Finance, trading, manufacturing, design and literature | Solve five industry mini-challenges |
+| 8 | What agents are and how they work | Design a safe agent workflow |
+| 9 | Agent projects 1–3 | Morning planner, inbox draft organizer, sample-budget helper |
+| 10 | Agent projects 4–6 | Research scout, meeting notes and content creator |
+| 11 | Agent projects 7–9 | Shopping analyst, quiz coach and maintenance assistant |
+| 12 | Vibe coding, testing, security and publishing | Create, review and share a responsive website |
 
-## Run it on your machine — step by step
+## 🎮 Peek inside the exercises
 
-AI Adventure Academy is a **static web application**. You do not need a database or heavy installation. It can run on **Windows, macOS or Linux**.
+| Weekly mission | Agent laboratory |
+|---|---|
+| ![Weekly exercise preview](assets/exercise-week.svg) | ![Milo agent exercise preview](assets/exercise-agent.svg) |
 
-### Step 1 — Download the project
+![AI understanding quiz preview](assets/exercise-quiz.svg)
 
-![Step 1 — Download the AI Academy](assets/setup-step-1-download.svg)
+The exercise illustrations demonstrate lesson content; they are not literal screenshots of a live browser.
 
-- Open the **ai-academy** repository.
-- Click **Download ZIP**.
-- Alternatively, clone it with Git.
+---
 
-**Optional Git command**
+## 💻 Run AI Adventure Academy on your own computer
+
+You can use the **public website** without downloading anything, or run a **local copy** on Windows, macOS or Linux. Running locally is useful for offline study, customizing the curriculum and testing changes.
+
+### Before you begin
+
+You need a modern browser (Firefox, Chrome, Edge or Safari), approximately 50 MB of disk space for the complete image-rich project, and either **Python 3** or **Node.js** for the optional local HTTP server. Git is optional. For installing a desktop-style shortcut, browser support varies.
+
+### Step 1 — Download the course
+
+![Step 1: Download the course](assets/setup-step-1-download.svg)
+
+1. Open [github.com/jsankr/ai-academy](https://github.com/jsankr/ai-academy).
+2. Click the repository's **Code** button.
+3. Select **Download ZIP**.
+4. Save the ZIP to a location you can find, such as Downloads.
+
+If you already use Git, you can instead run:
 
 ```bash
 git clone https://github.com/jsankr/ai-academy.git
 ```
 
-### Step 2 — Extract and open the folder
+### Step 2 — Extract the files
 
-![Step 2 — Extract and Open the Folder](assets/setup-step-2-extract.svg)
+![Step 2: Extract the project](assets/setup-step-2-extract.svg)
 
-- Extract the ZIP file.
-- Open the project folder.
-- You should see files like `index.html`, `workbook.html`, `README.md`, `course-data.json` and the `assets` folder.
+On Windows, right-click the ZIP and choose **Extract All**. On macOS, double-click the ZIP to extract it. On Linux, extract it using your file manager or an unzip utility.
 
-### Step 3 — Run it locally
+Open the extracted `ai-academy-main` folder (or the `ai-academy` folder when cloned). Keep the project files together:
 
-![Step 3 — Run It Locally](assets/setup-step-3-run-local.svg)
-
-Open **Terminal**, **Command Prompt**, or **PowerShell** inside the project folder, then run **one** of the following:
-
-**Option A — Python**
-
-```bash
-python -m http.server 8000
+```text
+ai-academy/
+├── index.html
+├── workbook.html
+├── course-data.json
+├── manifest.webmanifest
+├── sw.js
+├── README.md
+└── assets/
+    ├── milo-3d.webp
+    ├── academy-icon.svg
+    └── setup-step-*.svg
 ```
 
-**Option B — Node.js / npx**
+### Step 3 — Start the application locally
+
+![Step 3: Launch a local HTTP server](assets/setup-step-3-run-local.svg)
+
+A lightweight local web server is recommended so that service workers and local file references behave consistently.
+
+**Windows:**
+
+1. Open the project folder in File Explorer.
+2. Click the address bar, type `cmd`, and press Enter.
+3. Enter:
+
+```powershell
+py -m http.server 8000
+```
+
+If `py` is unavailable but Python is installed, try `python -m http.server 8000`.
+
+**macOS:**
+
+1. Open Terminal.
+2. Change directory to your extracted project folder (you can type `cd ` and drag the folder into Terminal).
+3. Run:
+
+```bash
+python3 -m http.server 8000
+```
+
+**Linux:**
+
+Open Terminal in the project directory and run:
+
+```bash
+python3 -m http.server 8000
+```
+
+**Alternative for all systems with Node.js installed:**
 
 ```bash
 npx serve .
 ```
 
-### Step 4 — Open it in your browser
+The Node.js alternative may select a different port. Use the URL shown in the terminal. `npx` might download a dependency the first time and requires internet access for that installation.
 
-![Step 4 — Open the App in Your Browser](assets/setup-step-4-open-browser.svg)
+The server keeps running while its terminal is open. Press **Ctrl+C** in the terminal to stop it.
 
-Open your browser and visit:
+### Step 4 — Open the course
 
-```text
-http://localhost:8000
-```
+![Step 4: Open the app in your browser](assets/setup-step-4-open-browser.svg)
 
-The homepage should load with:
-- the 3D Milo hero section
-- the Learning Cockpit dashboard
-- the floating Milo guide
-- the 12-week roadmap
-- the workbook link and setup section
+Open a browser and visit:
 
-### Step 5 — Optional: install it like a standalone application
+**http://localhost:8000/**
 
-![Step 5 — Optional: Install as a Desktop App](assets/setup-step-5-install-app.svg)
+You should see the academy homepage, learning paths, progress dashboard and Milo. Open the workbook, choose a lesson, try the glossary, then answer a quiz question to check the experience.
 
-After opening the app in your browser, you can launch it like a standalone desktop-style app.
+If you chose another server port, update the URL accordingly—for example, `http://localhost:8001/`.
 
-- In supported **Chrome / Edge** versions, try **Install app**. When that option is unavailable, choose **Create shortcut** instead.
-- In some browsers, this option appears in the **⋮ menu**.
-- Where browser installation is supported, the app opens in its own standalone window. A shortcut may instead open a normal browser window.
+### Step 5 — Optional: add a desktop shortcut or install as an app
 
-## Quick local usage notes
+![Step 5: Use a supported browser's app installation or shortcut](assets/setup-step-5-install-app.svg)
 
-- Progress is saved in your browser using `localStorage`.
-- No account is required.
-- No analytics or trackers are used.
-- The built-in Milo guide is local and course-aware; it does not require a live AI backend.
+**Shortcut:** In Chrome or Edge, use the browser's application/shortcut menu when available, or create an ordinary desktop shortcut to your local URL. A shortcut alone does not install a native application.
 
-## Testing completed locally
+**Installable web app:** On browsers that support installation for this site, use the **Install app** action in the address bar or menu. The project includes a web manifest and service worker; availability of the install action still depends on the browser and platform.
 
-The following local checks were completed for this package:
+**Important:** A shortcut to `localhost:8000` requires you to start the local server before use. A hosted installation at [jsankr.github.io/ai-academy](https://jsankr.github.io/ai-academy/) doesn't require your own local server, but the first visit and some external resources require internet access. This is a **PWA/desktop-style web experience**, not an Electron installer or a downloadable Windows EXE/macOS DMG.
 
-- HTML file structure updated successfully
-- JavaScript syntax parsed successfully
-- Required image assets copied into `assets/`
-- Main pages available for local serving: `index.html` and `workbook.html`
-- README image references updated to local asset paths
+## 🧭 First lesson — a five-minute tour
 
-## Important limitations
+1. Choose a learning level.
+2. Open the first incomplete week.
+3. Read Monday's introduction, try Wednesday's experiment and build Saturday's small project.
+4. Copy a tutor prompt when you want a deeper explanation in your chosen AI assistant.
+5. Mark the week complete only after trying the exercise.
+6. Open Milo and ask **“What should I learn next?”**.
+7. Look at the Learning Cockpit for your completion percentage, quiz result and next mission.
 
-- Milo's chat guidance is **built-in scripted course guidance**, not a full live ChatGPT/Claude integration.
-- Cross-browser visual QA on physical devices should still be done after you publish.
+Your completion record is saved using browser `localStorage`; it is not synced between computers or browser profiles. Use **Export saved progress** to make a JSON backup.
 
-## Privacy and safety
+## 🏗️ How this training was designed
 
-- Do not place API keys or secrets into a public static site.
-- The agent examples are educational prototypes, not autonomous production agents.
-- Financial and trading content is for learning only, not investment advice.
-- Children should use external AI services only with appropriate adult supervision and age-appropriate tools.
+1. Define outcomes that matter in daily life: understand AI, create useful work, improve decisions, build safe agents and share applications.
+2. Organize concepts from familiar examples toward technical mechanics.
+3. Differentiate four learning paths without requiring everyone to have the same background.
+4. Make each weekly activity experiential: concept → experiment → hands-on project → reflection.
+5. Add sample datasets, reusable prompts, verification tasks and carefully bounded automation exercises.
+6. Include measurable progress, interactive quizzes, a playful mascot and a self-guided timetable.
+7. Build the frontend in semantic HTML, CSS and JavaScript without a mandatory external runtime.
+8. Document privacy boundaries, age suitability, security considerations and limitations.
+9. Validate syntax, links and referenced local assets, then review changes before release.
 
-## Learning references
+## 🛠️ Project architecture
 
-- [OpenAI Academy](https://openai.com/academy/ai-fundamentals/)
-- [OpenAI: understanding tokens](https://help.openai.com/en/articles/4936856-understanding-and-counting-tokens)
-- [Anthropic: building effective agents](https://www.anthropic.com/research/building-effective-agents)
-- [n8n AI workflow tutorial](https://docs.n8n.io/advanced-ai/intro-tutorial/)
-- [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart)
+| File / directory | Purpose |
+|---|---|
+| `index.html` | Main interactive learning application, lessons, progress dashboard, quizzes and Milo |
+| `workbook.html` | Practical workbook and agent-building exercises |
+| `course-data.json` | Readable curriculum reference; not necessarily the sole data source used by the current page |
+| `manifest.webmanifest` | Web-app name, icon and standalone display metadata |
+| `sw.js` | Service-worker caching of supported local resources |
+| `assets/` | Mascot artwork, course graphics, icons and installation diagrams |
+| `README.md` | Course overview, learner guidance and local running instructions |
 
-## What Milo can and cannot do
+### Local development tips
 
-Milo is your **3D-rendered chimp mentor**. He moves between visible sections, opens a question-and-answer panel, explains built-in AI concepts and reacts to your progress. The guide is currently **offline and rule-based**: it is *not* connected to ChatGPT or Claude, cannot browse the web or independently run tasks, and does not transmit your questions to a server. Choose **Pause movement** below Milo if you prefer less motion. System reduced-motion preferences are also honored.
+- Update the page content and any corresponding data reference when editing the curriculum.
+- Check browser developer-console errors if an interaction stops working.
+- Keep `index.html` and `assets/` in their relative positions.
+- Do not hard-code paid service API tokens or private personal data in this static frontend.
+- For a genuinely connected AI tutor, build a backend that safely holds API credentials and enforces access control, usage limits and age-appropriate safeguards.
 
-## If something doesn't work
+## 🧪 Functional checks you can perform
 
-- On macOS/Linux, use `python3 -m http.server 8000` if `python` is not found.
-- On Windows, try `py -m http.server 8000` if Python is installed but `python` does not work.
-- If port 8000 is in use, run `python -m http.server 8001` and open `http://localhost:8001`.
-- Keep the `assets` directory beside `index.html` so images appear correctly.
-- If the app looks outdated after an update, refresh it or reopen the installed app.
+- Open the homepage and `workbook.html` without a 404.
+- Test the learning paths and all 12 weekly cards.
+- Confirm glossary search filters terms.
+- Complete and reset the quiz.
+- Mark and unmark a week; verify the cockpit responds.
+- Refresh the browser and confirm progress remains on the same device.
+- Open Milo, request a concept explanation and pause animation.
+- Check the layout at phone and desktop widths, and navigate using keyboard Tab.
+- Check image paths, any PWA installation behavior and offline loading after initial caching.
+- Verify generated facts and external learning links independently.
 
-**The illustrated setup panels are explanatory diagrams, not literal screenshots of GitHub or browser menus.** Available menu labels differ by browser and operating system.
+Static code checks do not guarantee full browser functionality, accessibility compliance or security certification.
+
+## 🔐 Privacy, safety and limitations
+
+The built-in course needs no account and uses no mandatory analytics service. Progress is browser-local. Milo's question-answering is **prewritten/topic-matched** rather than unrestricted conversational AI.
+
+Never put passwords, API keys, access tokens or private health/financial records in a public repository. Agent prompts and workflows are learning prototypes and do not send messages, purchase items or make trades on their own. Sensitive external actions require explicit human approval and appropriately protected tools.
+
+Third-party AI tools may require paid accounts and have separate minimum-age rules. Financial and trading activities are educational rather than promises of returns.
+
+## 🧰 Troubleshooting
+
+| Problem | Suggested fix |
+|---|---|
+| Python command not found | Install Python 3, or try `py` on Windows / `python3` on macOS and Linux |
+| Port 8000 occupied | Use `python -m http.server 8001` and open `http://localhost:8001/` |
+| Pictures missing | Preserve the full `assets/` folder and check case-sensitive filenames |
+| Older design still displayed | Refresh, clear site cache if necessary, and check the service worker |
+| Local shortcut doesn't open | Start the local server first; verify the port |
+| Milo moves too often | Use his Pause movement control or reduced-motion accessibility settings |
+| Progress seems lost | Check the same browser profile and site address; progress isn't cloud-synced |
+
+## 📚 Primary learning references
+
+- [OpenAI Academy — AI Fundamentals](https://openai.com/academy/ai-fundamentals/)
+- [OpenAI — Understanding tokens](https://help.openai.com/en/articles/4936856-understanding-and-counting-tokens)
+- [Anthropic — Building Effective Agents](https://www.anthropic.com/research/building-effective-agents)
+- [n8n — AI workflow tutorial](https://docs.n8n.io/advanced-ai/intro-tutorial/)
+- [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/quickstart/)
+- [OWASP GenAI Security Project](https://genai.owasp.org/)
+- [MDN — Progressive web apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+
+---
+
+**AI Adventure Academy is an independent educational project.** Third-party brand names, service names and trademarks belong to their respective owners. No certification or official affiliation is implied.
