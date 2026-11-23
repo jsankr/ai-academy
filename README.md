@@ -15,6 +15,20 @@
 
 **Learning levels are not gatekeepers.** Adults may start with playful kids' explanations, and advanced teens may work through technical labs. Kids should only use third-party AI services that meet their age rules, with appropriate adult guidance. The academy does **not** collect children's information or provide logins.
 
+## Preview the hands-on exercises
+
+Every week includes real-world challenges, practical experiments and clear checkpoints—not just theory. Here are three **illustrative previews** of the activities you'll explore in the interactive academy.
+
+| Weekly challenge | Your first AI agent |
+|:---:|:---:|
+| ![Weekly hands-on AI exercise preview](assets/exercise-week.svg) | ![Morning Compass agent workshop preview](assets/exercise-agent.svg) |
+
+### Learn, experiment and test your understanding
+
+![Interactive AI quiz exercise preview](assets/exercise-quiz.svg)
+
+[**Explore the interactive academy**](https://jsankr.github.io/ai-academy/) · [**Open the practical workbook**](https://jsankr.github.io/ai-academy/workbook.html)
+
 ## What is included?
 
 - `index.html` — polished responsive single-page academy, 4 learning paths, fixed timetable, 12 weekly lesson cards, 9 agent prototypes, a glossary, official tool links, quizzes and browser-local progress.
@@ -80,18 +94,6 @@ Starts **Monday, 30 November 2026**. All times **IST (Asia/Kolkata)**. It is **s
 3. Do not enter children's photos, names, addresses, school details, voices or other private information into AI tools without appropriate safeguards and permission.
 4. Encourage checking AI answers against trusted materials and asking people for help.
 5. Let the learner explain what surprised them and one thing AI got wrong.
-
-## Publish this repository to GitHub Pages
-
-1. Open **https://github.com/jsankr/ai-academy**.
-2. Ensure `index.html`, `workbook.html`, `course-data.json` and `README.md` are at the **root**, not nested in another `ai-academy` directory.
-3. Select **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch **main**, folder **/(root)**, then **Save**.
-6. Look for GitHub's Pages deployment success notice.
-7. Open **https://jsankr.github.io/ai-academy/**.
-8. Open a private browser window and verify the home page, the workbook, navigation, four level cards, one agent prompt, glossary search, quiz and progress tracker.
-9. On failures, check **Actions → Pages build and deployment** for errors. Fix the files, commit and recheck.
 
 ## How to update course lessons
 
