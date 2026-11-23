@@ -29,6 +29,16 @@ Milo is designed to make learning less intimidating. Click his character to open
 
 ![Illustration of AI Academy learning exercise](assets/exercise-week.svg)
 
+## 🖼️ Milo high-resolution assets
+
+The application now uses two published mascot assets:
+
+- **`assets/milo-4k.avif`** — portrait image, **3072 × 4096 pixels**, shown in the welcome section when AVIF is supported.
+- **`assets/milo-guide.webp`** — optimized **512 × 683 pixel** image used by the jumping guide and chat panel. Smaller on-screen assets load faster while remaining sharp at their rendered sizes.
+- **`assets/milo-3d.webp`** — earlier thumbnail, retained only for backwards compatibility. The current interface no longer uses it.
+
+The portrait is an AI-generated *pre-rendered 3D-style* image upscaled from a smaller source; its canvas is 4K-class but this should not be mistaken for native 4K source detail, a rotatable 3D mesh or real-time 3D rendering. Milo remains the same character based on the provided reference: beige hoodie, yellow crescent, jeans, sneakers and crossbody bag.
+
 ## 🎓 Choose your learning path
 
 | Path | Suitable for | How you learn | Final challenge |
@@ -111,7 +121,7 @@ ai-academy/
 ├── sw.js
 ├── README.md
 └── assets/
-    ├── milo-3d.webp
+    ├── milo-4k.avif\n    ├── milo-guide.webp
     ├── academy-icon.svg
     └── setup-step-*.svg
 ```
@@ -217,7 +227,7 @@ Your completion record is saved using browser `localStorage`; it is not synced b
 | `course-data.json` | Readable curriculum reference; not necessarily the sole data source used by the current page |
 | `manifest.webmanifest` | Web-app name, icon and standalone display metadata |
 | `sw.js` | Service-worker caching of supported local resources |
-| `assets/` | Mascot artwork, course graphics, icons and installation diagrams |
+| `assets/` | 4K-class Milo artwork, optimized guide mascot, course graphics, icons and installation diagrams |
 | `README.md` | Course overview, learner guidance and local running instructions |
 
 ### Local development tips
