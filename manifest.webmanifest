@@ -1,0 +1,17 @@
+{
+  "name": "AI Adventure Academy",
+  "short_name": "AI Academy",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#080d19",
+  "background_color": "#080d19",
+  "icons": [
+    {
+      "src": "assets/academy-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
