@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layout: app shell — sticky sidebar (desktop) / top bar + sheet (mobile), one view at a time.
+   Studio skin (teens/adults): calm slate + teal, Space Grotesk / IBM Plex.
+   Quest skin (Young Explorers): night-jungle green + banana yellow, Baloo 2 / Nunito. */
+@layer base {
+  :root {
+    --background: 200 14% 96%; --foreground: 197 35% 9%;
+    --card: 0 0% 100%; --card-foreground: 197 35% 9%;
+    --popover: 0 0% 100%; --popover-foreground: 197 35% 9%;
+    --primary: 176 84% 26%; --primary-foreground: 0 0% 100%;
+    --secondary: 195 16% 91%; --secondary-foreground: 197 35% 12%;
+    --muted: 195 16% 92%; --muted-foreground: 197 11% 36%;
+    --accent: 172 55% 90%; --accent-foreground: 176 85% 16%;
+    --destructive: 4 62% 44%; --destructive-foreground: 0 0% 100%;
+    --border: 195 15% 86%; --input: 195 15% 82%; --ring: 176 84% 30%;
+    --ok: 147 73% 28%; --highlight: 45 100% 68%; --highlight-foreground: 40 60% 10%;
+    --sidebar: 0 0% 100%;
+    --radius: 0.6rem;
+    --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    --hero-glow: 176 84% 26%;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --background: 197 33% 6%; --foreground: 190 25% 92%;
+      --card: 197 30% 9%; --card-foreground: 190 25% 92%;
+      --popover: 197 30% 10%; --popover-foreground: 190 25% 92%;
+      --primary: 174 58% 56%; --primary-foreground: 175 70% 8%;
+      --secondary: 195 28% 14%; --secondary-foreground: 190 25% 92%;
+      --muted: 195 28% 13%; --muted-foreground: 193 12% 64%;
+      --accent: 176 45% 16%; --accent-foreground: 172 70% 82%;
+      --destructive: 4 80% 68%; --destructive-foreground: 0 0% 8%;
+      --border: 195 26% 18%; --input: 195 26% 22%; --ring: 174 58% 56%;
+      --ok: 150 55% 60%; --highlight: 45 90% 60%; --highlight-foreground: 40 60% 8%;
+      --sidebar: 197 32% 7.5%; --hero-glow: 174 58% 40%;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --background: 197 33% 6%; --foreground: 190 25% 92%;
+    --card: 197 30% 9%; --card-foreground: 190 25% 92%;
+    --popover: 197 30% 10%; --popover-foreground: 190 25% 92%;
+    --primary: 174 58% 56%; --primary-foreground: 175 70% 8%;
+    --secondary: 195 28% 14%; --secondary-foreground: 190 25% 92%;
+    --muted: 195 28% 13%; --muted-foreground: 193 12% 64%;
+    --accent: 176 45% 16%; --accent-foreground: 172 70% 82%;
+    --destructive: 4 80% 68%; --destructive-foreground: 0 0% 8%;
+    --border: 195 26% 18%; --input: 195 26% 22%; --ring: 174 58% 56%;
+    --ok: 150 55% 60%; --highlight: 45 90% 60%; --highlight-foreground: 40 60% 8%;
+    --sidebar: 197 32% 7.5%; --hero-glow: 174 58% 40%;
+    color-scheme: dark;
+  }
+  /* Quest skin: one committed look regardless of host theme (must stay last). */
+  :root.quest {
+    --background: 156 47% 10%; --foreground: 50 60% 93%;
+    --card: 156 44% 15%; --card-foreground: 50 60% 93%;
+    --popover: 156 44% 15%; --popover-foreground: 50 60% 93%;
+    --primary: 43 100% 62%; --primary-foreground: 40 70% 7%;
+    --secondary: 155 40% 20%; --secondary-foreground: 50 60% 93%;
+    --muted: 155 40% 19%; --muted-foreground: 100 16% 78%;
+    --accent: 14 100% 72%; --accent-foreground: 14 80% 8%;
+    --destructive: 10 100% 75%; --destructive-foreground: 10 80% 8%;
+    --border: 154 34% 25%; --input: 154 34% 30%; --ring: 43 100% 62%;
+    --ok: 136 60% 72%; --highlight: 43 100% 62%; --highlight-foreground: 40 70% 7%;
+    --sidebar: 156 47% 8%; --hero-glow: 43 100% 50%;
+    --radius: 1.1rem;
+    --font-display: "Baloo 2", ui-rounded, system-ui, sans-serif;
+    --font-body: "Nunito", ui-rounded, system-ui, sans-serif;
+    --font-mono: "Nunito", ui-rounded, system-ui, sans-serif;
+    color-scheme: dark;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-background text-foreground font-sans antialiased; font-size: 15.5px; line-height: 1.6; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: hsl(var(--sidebar)); }
+  h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; letter-spacing: -0.01em; }
+  :focus-visible { outline: 2px solid hsl(var(--ring)); outline-offset: 2px; }
+}
+
+@layer components {
+  .gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: hsl(var(--muted-foreground)); }
+  .quest .eyebrow { letter-spacing: 0.06em; font-weight: 800; color: hsl(var(--accent)); }
+  .tnum { font-variant-numeric: tabular-nums; }
+  .hero-glow { background: radial-gradient(900px 380px at 100% 0%, hsl(var(--hero-glow) / 0.14), transparent 65%); }
+  .quest .chunky { box-shadow: 0 5px 0 hsl(0 0% 0% / 0.3); }
+  .quest .chunky-primary { box-shadow: 0 5px 0 hsl(38 80% 32%); }
+  .trail-line { background-image: linear-gradient(hsl(var(--border)) 50%, transparent 50%); background-size: 4px 14px; }
+  @keyframes bob { 50% { transform: translateY(-8px); } }
+  .bob { animation: bob 4s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) { .bob { animation: none; } * { transition: none !important; } }
+}
