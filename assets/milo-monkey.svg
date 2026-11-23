@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" role="img" aria-labelledby="title desc"><title id="title">Milo the monkey learning guide</title><desc id="desc">A playful smiling cartoon monkey with big sparkling eyes, a mint hoodie, sneakers and a curled tail.</desc><defs><linearGradient id="fur" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#d98b54"/><stop offset=".48" stop-color="#ac5c35"/><stop offset="1" stop-color="#743b2b"/></linearGradient><linearGradient id="face" x1=".1" y1="0" x2=".8" y2="1"><stop stop-color="#ffdfaf"/><stop offset="1" stop-color="#eab581"/></linearGradient><linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a0f4e0"/><stop offset="1" stop-color="#349c99"/></linearGradient><radialGradient id="ear"><stop stop-color="#ffcb99"/><stop offset="1" stop-color="#bf744f"/></radialGradient><filter id="shadow"><feGaussianBlur stdDeviation="5"/></filter></defs>
+<ellipse cx="121" cy="284" rx="61" ry="10" fill="#060b15" opacity=".35" filter="url(#shadow)"/>
+<path d="M166 201 C244 205 223 105 184 114 C157 121 188 162 211 139" fill="none" stroke="#75432d" stroke-width="18" stroke-linecap="round"/>
+<path d="M166 201 C244 205 223 105 184 114 C157 121 188 162 211 139" fill="none" stroke="#c07547" stroke-width="8" stroke-linecap="round" opacity=".66"/>
+<ellipse cx="121" cy="205" rx="61" ry="65" fill="url(#shirt)" stroke="#367772" stroke-width="4"/>
+<path d="M77 170 Q122 200 165 169" fill="none" stroke="#d1fff0" stroke-width="4" opacity=".5"/>
+<path d="M90 201 L94 234 M152 201 L150 234" stroke="#2d7774" stroke-width="4" stroke-linecap="round"/>
+<path d="M94 232 Q121 242 150 232" fill="none" stroke="#277d77" stroke-width="4"/>
+<path d="M90 259 L79 282 M151 258 L165 282" stroke="#75422f" stroke-width="23" stroke-linecap="round"/>
+<ellipse cx="74" cy="282" rx="27" ry="13" fill="#b7a8ff" stroke="#6559a3" stroke-width="4"/>
+<ellipse cx="171" cy="282" rx="27" ry="13" fill="#b7a8ff" stroke="#6559a3" stroke-width="4"/>
+<path d="M69 183 L45 223 M173 177 L192 218" stroke="#9d573a" stroke-width="21" stroke-linecap="round"/>
+<ellipse cx="45" cy="225" rx="15" ry="18" fill="url(#face)"/>
+<ellipse cx="190" cy="222" rx="15" ry="18" fill="url(#face)"/>
+<ellipse cx="53" cy="95" rx="28" ry="35" fill="url(#fur)" stroke="#7b432f" stroke-width="4"/>
+<ellipse cx="188" cy="95" rx="28" ry="35" fill="url(#fur)" stroke="#7b432f" stroke-width="4"/>
+<ellipse cx="53" cy="96" rx="16" ry="23" fill="url(#ear)"/>
+<ellipse cx="188" cy="96" rx="16" ry="23" fill="url(#ear)"/>
+<path d="M72 35 Q123 0 173 38 Q212 73 190 132 Q176 164 121 170 Q65 164 50 125 Q31 65 72 35Z" fill="url(#fur)" stroke="#7b432f" stroke-width="4"/>
+<path d="M77 82 Q59 46 88 40 Q120 25 130 54 Q156 23 176 53 Q196 91 174 115 Q170 154 120 157 Q73 153 67 119 Q53 97 77 82Z" fill="url(#face)"/>
+<ellipse cx="97" cy="93" rx="21" ry="28" fill="#fff9ec"/><ellipse cx="148" cy="93" rx="21" ry="28" fill="#fff9ec"/>
+<ellipse cx="103" cy="96" rx="12" ry="17" fill="#263243"/><ellipse cx="142" cy="96" rx="12" ry="17" fill="#263243"/>
+<circle cx="107" cy="90" r="5" fill="#fff"/><circle cx="146" cy="90" r="5" fill="#fff"/>
+<path d="M104 67 Q95 61 83 66 M139 65 Q150 59 161 66" fill="none" stroke="#6d382c" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="122" cy="125" rx="36" ry="25" fill="#ffcf98"/>
+<ellipse cx="122" cy="115" rx="10" ry="7" fill="#915339"/>
+<path d="M101 133 Q122 155 145 132" fill="none" stroke="#783e35" stroke-width="5" stroke-linecap="round"/>
+<path d="M106 139 Q123 146 139 137" fill="#fff8e6" stroke="#fff8e6" stroke-width="2"/>
+<path d="M82 48 Q99 25 120 35" fill="none" stroke="#efb07a" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+<circle cx="182" cy="47" r="15" fill="#fff7d6" stroke="#997fdb" stroke-width="4"/><path d="M182 37V57 M172 47H192" stroke="#6f70c4" stroke-width="3"/>
+<circle cx="121" cy="202" r="13" fill="#0d716b" opacity=".8"/><path d="M118 196 L129 203 L118 209Z" fill="#d7fff6"/>
+</svg>
