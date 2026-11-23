@@ -1,0 +1,405 @@
+{
+  "weeks": [
+    [
+      "AI is everywhere",
+      "AI vs ML vs generative AI; common myths",
+      "Sort examples of AI versus rules-based software",
+      "Make an AI detective scrapbook"
+    ],
+    [
+      "Inside the model",
+      "LLMs, GPUs, parameters, weights, tokens, training and inference",
+      "Explain each term with a cooking analogy",
+      "Trace one model response step-by-step"
+    ],
+    [
+      "Master your prompts",
+      "How ChatGPT and Claude answer; grounded prompts and verification",
+      "Compare vague and well-structured prompts",
+      "Create your reusable 5-prompt toolkit"
+    ],
+    [
+      "Image design studio",
+      "Visual prompting, editing, composition, copyright",
+      "Make 3 versions of one original poster",
+      "Create an image brand board"
+    ],
+    [
+      "Video and sound",
+      "Storyboard, video generation, voiceover, subtitles",
+      "Create a 30-second animated explainer script",
+      "Produce a voiceover + storyboard"
+    ],
+    [
+      "Slides and daily life",
+      "AI presentation tools, planning, emails and routines",
+      "Convert notes to a six-slide presentation",
+      "Measure time saved during a daily task"
+    ],
+    [
+      "AI across industries",
+      "Finance, trading, manufacturing, design and literature",
+      "Analyze fictional expenses and defect logs",
+      "Deliver a five-industry mini showcase"
+    ],
+    [
+      "Agents explained",
+      "Tools, triggers, approvals, memory, workflows and APIs",
+      "Draw trigger → reason → review → action",
+      "Prototype a no-code agent"
+    ],
+    [
+      "Agents 1 to 3",
+      "Morning planner, inbox sorter and budget assistant",
+      "Run three normal cases and three failure cases",
+      "Build three manual-trigger prototypes"
+    ],
+    [
+      "Agents 4 to 6",
+      "Research, meeting and creative agents",
+      "Verify source claims and generated action items",
+      "Build three more prototypes"
+    ],
+    [
+      "Agents 7 to 9",
+      "Shopping, study coach, maintenance assistants",
+      "Try malicious input and missing-data tests",
+      "Test the final three agent prompts"
+    ],
+    [
+      "Vibe-code and publish",
+      "HTML, CSS, JS, GitHub Pages, accessibility, OWASP basics",
+      "Build a responsive mini application",
+      "Publish your tested final website"
+    ]
+  ],
+  "tracks": [
+    {
+      "id": "kids",
+      "emoji": "🪁",
+      "name": "Young Explorers",
+      "audience": "Ages 8–12 · with adult guidance",
+      "promise": "Stories, games, invention and safe discovery",
+      "modules": [
+        [
+          "Pattern detectives",
+          "Sort toy animals using rules; compare how AI finds patterns.",
+          "Invent three funny sorting rules. Test with an animal that breaks them."
+        ],
+        [
+          "Robot storyteller",
+          "Learn to ask clear questions and verify AI guesses.",
+          "Create a three-character story and check whether AI followed each instruction."
+        ],
+        [
+          "Art explorer",
+          "Design a fictional creature or planet without uploading personal photos.",
+          "Write five imaginative facts and draw a creature."
+        ],
+        [
+          "Build a paper agent",
+          "Design a reading recommender using a yes/no flowchart.",
+          "Have three imaginary readers use it and change one faulty rule."
+        ]
+      ],
+      "capstone": "A four-page comic explaining how AI can help and make mistakes.",
+      "assessment": "Explain three ideas, check two answers, build one flowchart and describe three privacy rules."
+    },
+    {
+      "id": "beginners",
+      "emoji": "🌱",
+      "name": "Everyday Beginners",
+      "audience": "Teenagers 13+ and adults · no coding required",
+      "promise": "Confidence, real-world productivity and creative tools",
+      "modules": [
+        [
+          "Understand AI",
+          "Models, weights, GPU, LLM, context, tokens, hallucinations and grounding.",
+          "Explain token prediction using the phrase “The cat sat on the…”"
+        ],
+        [
+          "Make useful media",
+          "Image, audio, video and presentation workflows.",
+          "Make five slides with a 30-second narration and original visuals."
+        ],
+        [
+          "Improve daily life",
+          "Planning, summaries, fact checking and budgeting using fictional data.",
+          "Compare time taken on a weekly plan with and without AI."
+        ],
+        [
+          "Become a creator",
+          "Prototype no-code automations and publish a basic static website.",
+          "Draft requirements for a personal dashboard and review its security."
+        ]
+      ],
+      "capstone": "An AI-assisted life organizer with an illustrated, narrated how-to.",
+      "assessment": "Five checked claims, five prompts, one presentation and one safe workflow."
+    },
+    {
+      "id": "builders",
+      "emoji": "🛠️",
+      "name": "Practical Builders",
+      "audience": "Intermediate learners · visual workflow tools first",
+      "promise": "Real automations, reliable agents and deployed apps",
+      "modules": [
+        [
+          "Structured prompting",
+          "Reusable templates, output schemas, ground truth and evaluation.",
+          "Test a prompt against 10 realistic cases and record errors."
+        ],
+        [
+          "No-code agent loops",
+          "Manual trigger, model step, output preview, human approvals and error branches.",
+          "Implement a planner using n8n or Make with synthetic input."
+        ],
+        [
+          "Nine-agent workshop",
+          "Plan, inbox, budget, research, meeting, media, buyer, quiz, maintenance.",
+          "For each agent test normal, missing and malicious inputs."
+        ],
+        [
+          "Ship a working site",
+          "Use HTML/CSS/JS with AI code assistance, verify and deploy.",
+          "Test with keyboard and a narrow screen; publish with HTTPS."
+        ]
+      ],
+      "capstone": "A secure personal agent dashboard using no secrets in public code.",
+      "assessment": "Functional 30%, verified facts 20%, test evidence 20%, security 15%, accessibility 15%."
+    },
+    {
+      "id": "experts",
+      "emoji": "🚀",
+      "name": "Expert Lab",
+      "audience": "Advanced builders · Python, API and Git basics helpful",
+      "promise": "Reliable, observable, secure AI systems",
+      "modules": [
+        [
+          "Model mechanics",
+          "Transformer intuition, embeddings, evaluation, compute, quantization.",
+          "Benchmark two models on an identical set of 20 questions."
+        ],
+        [
+          "RAG and tools",
+          "Chunking, retrieval, citations, tool calls, schemas and server secrets.",
+          "Build document Q&A that abstains if evidence is missing."
+        ],
+        [
+          "Agents under attack",
+          "Prompt injection, permissions, sandboxing, logging and approvals.",
+          "Run 30 adversarial or boundary-case tests; record prevented actions."
+        ],
+        [
+          "Production readiness",
+          "CI, deployment, accessibility, auth, rollback, observability and costs.",
+          "Deploy a separate server-side integration with tests and threat model."
+        ]
+      ],
+      "capstone": "An evidence-grounded agent with access controls, audit trail and evaluation suite.",
+      "assessment": "Evaluation 25%, safe tools 20%, security 25%, deploy 15%, efficiency 10%, documentation 5%."
+    }
+  ],
+  "agents": [
+    [
+      "Morning Compass",
+      "Prioritize a list of fictional appointments and tasks.",
+      "I have [TASKS] and [APPOINTMENTS]. Create a conflict-free plan with buffers and top-three priorities. Ask when important information is missing. Never change my calendar without approval.",
+      "No overlapping appointments or invented commitments."
+    ],
+    [
+      "Inbox Tamer",
+      "Sort sample subjects and draft replies.",
+      "Categorize [SAMPLE EMAILS] into urgent, action, waiting and archive. Draft replies but never send, delete or archive anything without my approval.",
+      "Every category is explained; nothing is sent."
+    ],
+    [
+      "Money Mirror",
+      "Group invented transactions and compute totals.",
+      "Analyze [SYNTHETIC TRANSACTIONS]. Verify arithmetic, show category totals and distinguish fact from recommendation. Do not trade or transfer money.",
+      "Food ₹850 + ₹300 = ₹1150; totals match inputs."
+    ],
+    [
+      "Research Ranger",
+      "Verify a claim using original sources.",
+      "Research [QUESTION]. Cite primary sources and dates; distinguish verified facts, contested claims and estimates. Say when a source cannot be confirmed.",
+      "Every cited link actually supports its associated statement."
+    ],
+    [
+      "Meeting Magician",
+      "Turn fictional notes into action items.",
+      "Summarize [MEETING NOTES]. List decisions and actions. Only assign owners or deadlines explicitly mentioned; flag missing details.",
+      "No invented owners, promises or due dates."
+    ],
+    [
+      "Creator Studio",
+      "Generate slide, image and video plan.",
+      "Turn [IDEA] into 5 original slides, 3 visual prompts and a 45-second voiceover. Avoid claims without evidence and avoid copying protected artwork.",
+      "Script timing and slide content are consistent."
+    ],
+    [
+      "Smart Buyer",
+      "Compare options by evidence.",
+      "Compare [ITEMS] for [BUDGET] and [REQUIREMENTS]. Show total costs and trustworthy supporting sources. Mark missing prices unknown; never place an order.",
+      "No invented live prices or warranties."
+    ],
+    [
+      "Quiz Quest",
+      "Teach progressively and adapt questions.",
+      "Teach me [TOPIC] with one analogy and one question at a time. Give a hint before revealing answers; increase difficulty with mastery.",
+      "Feedback correct; questions grow gradually harder."
+    ],
+    [
+      "Care & Maintenance",
+      "Build equipment checklist from official intervals.",
+      "Given [EQUIPMENT] and [OFFICIAL SERVICE INTERVALS], draft a checklist. Treat all missing specifications as unknown. Do not invent torque or critical safety values.",
+      "No unverified maintenance intervals or settings."
+    ]
+  ],
+  "tools": [
+    [
+      "ChatGPT",
+      "https://chatgpt.com/",
+      "Research, writing, creative exploration"
+    ],
+    [
+      "Claude",
+      "https://claude.ai/",
+      "Reasoning, long documents, coding"
+    ],
+    [
+      "Gemini",
+      "https://gemini.google.com/",
+      "Multimodal assistant"
+    ],
+    [
+      "Sora",
+      "https://sora.com/",
+      "AI video; availability varies"
+    ],
+    [
+      "Runway",
+      "https://runwayml.com/",
+      "Video generation and editing"
+    ],
+    [
+      "ElevenLabs",
+      "https://elevenlabs.io/",
+      "Voiceover and speech"
+    ],
+    [
+      "Descript",
+      "https://www.descript.com/",
+      "Audio/video editing"
+    ],
+    [
+      "Canva",
+      "https://www.canva.com/",
+      "Images, slides and design"
+    ],
+    [
+      "Gamma",
+      "https://gamma.app/",
+      "AI-assisted presentation creation"
+    ],
+    [
+      "n8n",
+      "https://n8n.io/",
+      "Visual agent workflows"
+    ],
+    [
+      "Make",
+      "https://www.make.com/",
+      "Automation scenarios"
+    ],
+    [
+      "Zapier",
+      "https://zapier.com/",
+      "App automation"
+    ],
+    [
+      "GitHub Pages",
+      "https://pages.github.com/",
+      "Publish static websites"
+    ]
+  ],
+  "terms": {
+    "AI": "Software that performs tasks associated with human intelligence.",
+    "LLM": "Large language model; generates token sequences based on learned patterns.",
+    "GPU": "Parallel computing processor used in model training and inference.",
+    "Model": "A learned mathematical system that maps inputs to predictions.",
+    "Parameter": "Learned numeric value inside a model.",
+    "Weight": "A parameter representing the influence of a signal.",
+    "Token": "A text chunk, sometimes a whole word or part of one.",
+    "Context window": "The limited amount of tokenized content a model considers at once.",
+    "Training": "Adjusting parameters by learning patterns from data.",
+    "Inference": "Using a trained model to produce an output.",
+    "Hallucination": "A plausible-sounding but unsupported or false answer.",
+    "Agent": "A workflow/system that observes, chooses actions and uses tools toward a goal.",
+    "API": "Interface for one program to communicate with another.",
+    "RAG": "Retrieval-augmented generation: fetch evidence before answering.",
+    "Vibe coding": "Using natural-language instructions to help build and iterate on software.",
+    "GitHub Pages": "Hosting for static sites based on a GitHub repository."
+  },
+  "quiz": [
+    [
+      "What is a model weight?",
+      [
+        "A number influencing computations",
+        "A stored entire website",
+        "A graphics card"
+      ],
+      0,
+      "Weights are learned numeric values."
+    ],
+    [
+      "How does an LLM produce text?",
+      [
+        "By reading your mind",
+        "By predicting tokens iteratively",
+        "By searching only"
+      ],
+      1,
+      "The trained system generates tokens step by step."
+    ],
+    [
+      "What is safer for a budgeting exercise?",
+      [
+        "Use fictional transactions",
+        "Share bank password",
+        "Allow auto-trading"
+      ],
+      0,
+      "Synthetic inputs avoid exposing financial data."
+    ],
+    [
+      "A prompt-only prototype can…",
+      [
+        "Automatically read your Gmail",
+        "Generate drafts from supplied inputs",
+        "Transfer money"
+      ],
+      1,
+      "External actions require connected tools and permissions."
+    ],
+    [
+      "What can GitHub Pages serve?",
+      [
+        "A secure private backend",
+        "Static HTML/CSS/JS",
+        "Your secret API key safely"
+      ],
+      1,
+      "Browser-side source is public."
+    ],
+    [
+      "What should you do with AI citations?",
+      [
+        "Always trust them",
+        "Verify them against sources",
+        "Ignore them"
+      ],
+      1,
+      "Confident answers can be wrong."
+    ]
+  ]
+}
