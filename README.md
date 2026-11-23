@@ -29,6 +29,20 @@ Every week includes real-world challenges, practical experiments and clear check
 
 [**Explore the interactive academy**](https://jsankr.github.io/ai-academy/) · [**Open the practical workbook**](https://jsankr.github.io/ai-academy/workbook.html)
 
+## What's new: Milo & the Progress Studio
+
+**Milo the monkey** is your playful course guide. He moves around the learning experience, opens a conversational help panel, explains concepts such as tokens, GPUs, prompts, agents and vibe coding, and recommends the next incomplete lesson. The on-screen assistant answers from a built-in, offline course knowledge base: **it is not yet connected to a live LLM**, and it never sends typed questions to a server. Learners can pause/hide Milo and bring him back.
+
+The **Learning Cockpit** dashboard updates directly from your saved completion record and quiz results. It includes a 12-week mission trail, completion percentage, quiz score, and learner rank. Learning progress remains local to the browser (no login, analytics or cross-device sync).
+
+The design uses responsive **frosted glass panels, dimensional hover surfaces, layered gradients and an original SVG monkey mascot**. Reduced-motion settings are honored. All new assets are local to this repository:
+
+- `assets/academy-premium.css` — visual design, responsive dashboard, glass surface styles, motion rules.
+- `assets/academy-experience.js` — Milo chat guidance, course-context hints and live dashboard.
+- `assets/milo-monkey.svg` — original scalable monkey artwork.
+
+**Test Milo:** open the academy, click the mascot, ask “What is a GPU?” or “What should I learn next?”, mark a week complete, and check the Learning Cockpit. Try the quiz, then check its score in the cockpit. Press Escape to close the mentor panel. Use “Pause mascot movement” if you prefer no moving character.
+
 ## What is included?
 
 - `index.html` — polished responsive single-page academy, 4 learning paths, fixed timetable, 12 weekly lesson cards, 9 agent prototypes, a glossary, official tool links, quizzes and browser-local progress.
